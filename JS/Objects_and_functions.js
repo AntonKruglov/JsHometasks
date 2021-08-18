@@ -1,7 +1,7 @@
 //Создать объект car, добавить к нему свойство color со значением 'черный'
 const car = {
     color: 'Чёрный',
-// В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
+    // В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
     power() {
         console.log('Мощность двигателя 230 л.с.')
     }
@@ -48,10 +48,11 @@ function isPrime(num) {
     if (num < 2) {
         return false;
     }
-    for (let i = 2; i < num / 2; i += 1) {
+    for (let i = 2; i <= num / 2; i += 1) {
         if (num % i === 0) {
             return false;
         }
     }
     return true;
 }
+console.log(isPrime(4))
